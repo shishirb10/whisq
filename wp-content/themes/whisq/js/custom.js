@@ -1,4 +1,1 @@
-$('.searchicon').on("click", function(){
-	$(".searchbox").toggleClass('searchboxOpen');
-	alert("Hello! I am an alert box!!");
-});
+jQuery(document).ready(function(e){e(".scroll a, .navbar-brand, .gototop").click(function(o){o.preventDefault(),e("html,body").animate({scrollTop:e(this.hash).offset().top},600,"swing"),e(".scroll li").removeClass("active"),e(this).parents("li").toggleClass("active")})});var wow=new WOW({boxClass:"wowload",animateClass:"animated",offset:0,mobile:!0,live:!0});wow.init(),$(".carousel").swipe({swipeLeft:function(){$(this).carousel("next")},swipeRight:function(){$(this).carousel("prev")},allowPageScroll:"vertical"});

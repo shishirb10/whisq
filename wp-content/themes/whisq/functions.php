@@ -7,6 +7,7 @@
 
 	 // Load all of the styles that need to appear on all pages
 	 wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
+	 wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css' );
 	 wp_enqueue_style( 'font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
 	 wp_enqueue_style( 'whisq', get_template_directory_uri() . '/css/whisq.css' );	
 
@@ -16,6 +17,7 @@
 	
 	function add_my_script() {
 		wp_enqueue_script('jquery.min', get_template_directory_uri() . '/js/jquery.min.js', array('jquery') );
+		wp_enqueue_script('wow', get_template_directory_uri() . '/js/wow.min.js', array('jquery') );
 		wp_enqueue_script('custom', get_template_directory_uri() . '/js/custom.js', array('jquery') );
 		wp_enqueue_script('bootstrap.bundle', get_template_directory_uri() . '/js/bootstrap.bundle.js', array('jquery') );		
 		
