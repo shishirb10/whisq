@@ -1,8 +1,8 @@
 
 .fontcolor{color:#ba5c82}
 .navbar-brand{margin-left:3%}
-.navbar-nav{margin-left:4%}
-.navbar-nav li{ text-transform: uppercase; padding:0 5%; width: 100%; text-align: center;}
+.navbar-nav{margin-left:3%}
+.navbar-nav li{ text-transform: uppercase; padding:0 5%; width: 80%; text-align: center;}
 .navbar-expand-lg {    
     border-bottom: 1px solid #a8c3d4;
 }
@@ -10,22 +10,72 @@
     width: 100%;
     text-align: center;
 }
-.searchbox {
+#wrap {  
+  display: inline-block;
+  position: relative;
+  min-width: 150px;
+  min-height:30px;  
+  padding: 0; 
   float:right;
-  transition: all 0.5s;
-  margin-right:3%
+  
 }
-.btn-search {
-    color: #000;
-    background-color: #fff;
-    border-color: #fff;
+
+#wrap input[type="text"] {
+  
+  display: inline-block;  
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
 }
+
+#wrap input[type="text"]:focus:hover {
+  border-bottom: 1px solid #BBB;
+}
+
+#wrap input[type="text"]:focus {
+  width: 200px;
+  z-index: 9999;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+}
+#wrap input[type="submit"],#wrap .btn-search1 {
+  
+  display: inline-block;
+  color:#000;
+  float: right;   
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer; 
+  cursor: pointer;
+  transition: opacity .4s ease;
+  background:#fff;
+}
+
+#wrap input[type="submit"]:hover,#wrap .btn-search1:hover {
+  opacity: 0.8;
+}
+
 .btn-slider {
     color: #000;
     background-color: #fff;
     border-color: #fff;
 }
 .carousel-caption{color: #000;}
+.carousel-caption h3{font-family: 'Damion', cursive;
+    font-size: 71px;}
 .dropdown-menu {
    
     right: 0;   
@@ -66,7 +116,13 @@ white-space: nowrap;
     top: -9px;
 }
 
-
+.carousel-indicators .active{background:#000;}
+.carousel-indicators li {    
+   background:#ddd;
+   width: 10px;
+    height: 10px;    
+	border-radius:5px
+}
 .carousel-caption{top: 40%;bottom:none;}
 .container-bg{background: url('../images/Image_3-.jpg') no-repeat center center scroll;
 

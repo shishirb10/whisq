@@ -87,7 +87,7 @@ get_header(); ?>
 			foreach($terms as $term)
 			{			
 				?>
-			<div class="col-lg-6 portfolio-item mt-4 mt-3 animated fadeInUpBig wowload">
+			<div class="col-lg-6 portfolio-item mt-4 mt-3 animated fadeInUpBig wow">
 			  <div class="card h-100">
 				<a href="<?php  echo $term_link = get_term_link( $term ); ?>"><img class="card-img-top" src="<?php echo get_wp_term_image($term->term_id);	 ?>" alt=""></a>
 				<div class="card-body">
@@ -128,7 +128,7 @@ get_header(); ?>
 	<!-- row -->
 		<div class="row">				
 	        <div class="col-lg-12">
-			<div class="col-md-8 col-md-offset-2 pull-right testimonial-con animated fadeInLeftBig wowload ">
+			<div class="col-md-8 col-md-offset-2 pull-right testimonial-con animated fadeInLeftBig wow ">
                 <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
 				<div class="carousel slide testimonial" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
 				  <!-- Carousel indicators -->
@@ -205,7 +205,7 @@ get_header(); ?>
 			foreach($posts_array as $p)
 			{
 			?>
-			<div class="col-lg-6 portfolio-item mt-4 mt-3 animated fadeInDownBig wowload">
+			<div class="col-lg-6 portfolio-item mt-4 mt-3 animated fadeInDownBig wow">
 			  <div class="card h-100">
 			  <?php  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $p->ID ), 'full' );
 				// print_r ($image);
@@ -235,7 +235,7 @@ get_header(); ?>
 	</div>
 	<!-- /.container -->
 	<!-- container -->
-	<div class="container-fluid mb-4 animated fadeInRightBig wowload">	
+	<div class="container-fluid mb-4 animated fadeInRightBig wow">	
 	<!-- row -->
 		<div class="row">
 		<?php

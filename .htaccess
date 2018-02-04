@@ -4,6 +4,9 @@
 RewriteEngine On
 RewriteBase /whisq/
 RewriteRule ^index\.php$ - [L]
+RewriteRule ^whisQ/?$ /whisq/wp-login.php [QSA,L]
+RewriteRule ^whisQ/register/?$ /whisq/wp-login.php?action=register [QSA,L]
+RewriteRule ^whisQ/lostpassword/?$ /whisq/wp-login.php?action=lostpassword [QSA,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /whisq/index.php [L]
