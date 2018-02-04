@@ -1,0 +1,159 @@
+.navbar-brand{margin-left:3%}
+.navbar-nav{margin-left:4%}
+.navbar-nav li{ text-transform: uppercase; padding:0 5%; width: 100%;}
+.navbar-expand-lg .navbar-nav {    
+    width: 100%;
+    text-align: center;
+}
+.searchbox {
+  float:right;
+  transition: all 0.5s;
+  margin-right:3%
+}
+.btn-search {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-slider {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+.carousel-caption{color: #000;}
+.dropdown-menu {
+   
+    right: 0;   
+    min-width: 15rem;   
+    border: none;
+	left: auto;
+	margin-left:2px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    overflow: hidden;
+  width: 99%;
+  height: 0;
+  transition: .5s ease;
+}
+.overlay img{
+white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);}
+.portfolio-item:hover .overlay {
+  height: 100%;
+}
+.searchbox-nav .dropdown-menu {
+    right: 42px;
+    min-width: 15rem;
+    border: none;
+    left: auto;
+    margin-left: 2px;
+    top: -9px;
+}
+
+
+.carousel-caption{top: 40%;bottom:none;}
+.container-bg{background: url('../images/Image_3-.jpg') no-repeat center center scroll;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .carousel-item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #999;
+  border: none;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li.active {
+  background-color: #ba5c82;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+.quote{position: absolute; color:#ba5c82;    z-index: 99;left: 38px;}
+.testimonial .carousel-indicators li {
+    
+    width: 10px;
+    height: 10px;    
+	border-radius:5px
+}
+.testimonial .carousel-indicators{
+left:auto;
+right:0;
+    bottom: -40px !important;	
+	margin-right:5px;
+}
+.img-fluid {
+   width: 100%;
+    height: auto;
+}
+.card-body{position:relative;}
+.img-post-arrow {
+   position: absolute;
+    top: -34px;
+    right: 3%;
+}
+.testimonial-con{
+	margin-top:5%;
+    margin-bottom:5%;
+}
+.testimonial-con{
+	text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.testimonial
+{
+    padding:10% 12%;
+    margin-top:5%;
+    margin-bottom:5%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.sb_instagram_header{display:none;}
+#sb_instagram .sbi_follow_btn a {
+    background: #ba5c82;
+    color: #fff;
+}
+.recipe-background {
+   background:  url('../images/rec_bg.jpg') repeat-x;
+    background-size: 30% auto;
+    width: 100%;
+}
+.footer-bg{background:#ebebeb;}
