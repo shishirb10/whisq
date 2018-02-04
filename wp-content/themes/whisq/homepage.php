@@ -218,7 +218,7 @@ get_header(); ?>
 				  <h4 class="card-title text-center">
 					<a href="<?php echo get_permalink($p->ID); ?>"><?php echo $p->post_title; ?></a>					
 				  </h4>
-				<ul>
+				<ul class="m-xl-3">
 				<li class="card-text "><?php echo $p->post_excerpt; ?></li>	
 				</ul>	
 				</div>
